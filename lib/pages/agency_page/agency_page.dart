@@ -1,7 +1,6 @@
 import 'package:design_2/pages/data_query_page/data_query_page.dart';
 import 'package:design_2/pages/member_income_page/member_income_page.dart';
 import 'package:design_2/pages/member_invites_page/member_invites_page.dart';
-import 'package:design_2/utils/app_colors.dart';
 import 'package:design_2/widgets/back_arrow.dart';
 import 'package:flutter/material.dart';
 import 'widgets/balance_card.dart';

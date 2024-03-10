@@ -1,12 +1,14 @@
+// ignore_for_file: avoid_print
+
+import 'package:flutter/material.dart';
 import 'package:design_2/models/history_model.dart';
 import 'package:design_2/pages/member_income_page/widgets/select_time.dart';
 import 'package:design_2/utils/app_colors.dart';
 import 'package:design_2/widgets/back_arrow.dart';
-import 'package:flutter/material.dart';
 import '../member_income_page/widgets/button.dart';
 
 class DataQueryPage extends StatelessWidget {
-  const DataQueryPage({super.key});
+  const DataQueryPage({Key? key});
 
   @override
   Widget build(BuildContext context) {
@@ -33,24 +35,37 @@ class DataQueryPage extends StatelessWidget {
               // Filter Container
               Container(
                 height: 239,
-                width: MediaQuery.sizeOf(context).width,
+                width: MediaQuery.of(context).size.width,
                 decoration: BoxDecoration(
                   color: AppColors.primaryColor,
                   borderRadius: BorderRadius.circular(5),
                 ),
-                child: const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 19, vertical: 24),
+                child: Padding(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 19, vertical: 24),
                   child: Column(
                     children: [
-                      // Select Time
+                      // Select Start Time
                       SelectTime(
-                          text: 'Select Start Time', time: '10 May 2024'),
-                      SizedBox(height: 20),
-                      SelectTime(text: 'Select End Time', time: '10 May 2024'),
-                      SizedBox(height: 30),
+                        text: 'Select Start Time',
+                        onDateSelected: (DateTime selectedDate) {
+                          // Handle the selected start time
+                          print('Selected Start Time: $selectedDate');
+                        },
+                      ),
+                      const SizedBox(height: 20),
+                      // Select End Time
+                      SelectTime(
+                        text: 'Select End Time',
+                        onDateSelected: (DateTime selectedDate) {
+                          // Handle the selected end time
+                          print('Selected End Time: $selectedDate');
+                        },
+                      ),
+                      const SizedBox(height: 30),
 
                       // Button
-                      Button(),
+                      const Button(),
                     ],
                   ),
                 ),
@@ -59,7 +74,7 @@ class DataQueryPage extends StatelessWidget {
 
               // History
               SizedBox(
-                height: MediaQuery.sizeOf(context).height * 0.6,
+                height: MediaQuery.of(context).size.height * 0.6,
                 child: GridView.builder(
                   itemCount: historyList.length,
                   physics: const NeverScrollableScrollPhysics(),
