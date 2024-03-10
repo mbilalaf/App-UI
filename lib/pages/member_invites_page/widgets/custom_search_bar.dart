@@ -10,7 +10,7 @@ class CustomSearchBar extends StatelessWidget {
       children: [
         Expanded(
           child: Container(
-            height: 40,
+            height: 50,
             width: MediaQuery.sizeOf(context).width,
             decoration: const BoxDecoration(
               color: AppColors.lightGrey,
@@ -38,7 +38,7 @@ class CustomSearchBar extends StatelessWidget {
           ),
         ),
         Container(
-          height: 40,
+          height: 50,
           width: MediaQuery.sizeOf(context).width / 4.5,
           decoration: BoxDecoration(
             color: AppColors.primaryColor,

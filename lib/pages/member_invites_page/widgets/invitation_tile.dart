@@ -76,6 +76,8 @@ class InvitationTile extends StatelessWidget {
                         ),
                       ],
                     ),
+
+                    // Invitation Button
                     inviteMemberList[index].isJoined ?? true
                         ? const Text(
                             'Joined',
@@ -92,7 +94,7 @@ class InvitationTile extends StatelessWidget {
                               color: Colors.white,
                               gradient: LinearGradient(
                                 colors: [
-                                  AppColors.darkPurpule.withOpacity(0.95),
+                                  AppColors.darkPurpule.withOpacity(0.8),
                                   AppColors.primaryColor,
                                 ],
                               ),

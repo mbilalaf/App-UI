@@ -11,7 +11,7 @@ class BackArrow extends StatelessWidget {
         Navigator.pop(context);
       },
       child: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(12.0),
         child: Container(
           width: 25,
           decoration: BoxDecoration(
@@ -24,7 +24,7 @@ class BackArrow extends StatelessWidget {
           child: const Center(
             child: Icon(
               Icons.arrow_back_ios_rounded,
-              size: 20,
+              size: 18,
               color: Colors.black,
             ),
           ),

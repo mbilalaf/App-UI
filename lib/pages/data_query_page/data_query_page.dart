@@ -8,7 +8,7 @@ import 'package:design_2/widgets/back_arrow.dart';
 import '../member_income_page/widgets/button.dart';
 
 class DataQueryPage extends StatelessWidget {
-  const DataQueryPage({Key? key});
+  const DataQueryPage({super.key});
 
   @override
   Widget build(BuildContext context) {

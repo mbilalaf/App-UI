@@ -1,4 +1,5 @@
-import 'package:design_2/models/invite_member_model.dart';
+// ignore_for_file: unused_local_variable
+
 import 'package:design_2/pages/member_invites_page/widgets/custom_search_bar.dart';
 import 'package:design_2/pages/member_invites_page/widgets/invitation_tile.dart';
 import 'package:design_2/utils/app_colors.dart';
