@@ -12,7 +12,7 @@ class BalanceCard extends StatelessWidget {
       height: 255,
       width: MediaQuery.sizeOf(context).width,
       decoration: BoxDecoration(
-        color: AppColors.primaryColor.withOpacity(0.40),
+        color: AppColors.primaryColor,
         borderRadius: BorderRadius.circular(5),
       ),
       child: Padding(

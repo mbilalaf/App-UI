@@ -18,7 +18,7 @@ class SettingTile extends StatelessWidget {
         height: 66,
         width: MediaQuery.sizeOf(context).width,
         decoration: BoxDecoration(
-          color: AppColors.primaryColor.withOpacity(0.15),
+          color: const Color(0xffECECEC),
           borderRadius: BorderRadius.circular(5),
         ),
         child: Padding(
@@ -29,7 +29,7 @@ class SettingTile extends StatelessWidget {
               Text(
                 title,
                 style: const TextStyle(
-                  color: Colors.white,
+                  color: AppColors.darkGrey,
                   fontSize: 14,
                   fontWeight: FontWeight.w500,
                 ),
@@ -37,7 +37,7 @@ class SettingTile extends StatelessWidget {
               const Icon(
                 Icons.arrow_forward_ios_outlined,
                 size: 16,
-                color: Colors.white,
+                color: AppColors.darkGrey,
               ),
             ],
           ),

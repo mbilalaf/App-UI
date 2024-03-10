@@ -1,3 +1,4 @@
+import 'package:design_2/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class PrfileHeader extends StatelessWidget {
@@ -21,7 +22,7 @@ class PrfileHeader extends StatelessWidget {
             Text(
               'Hamza1122',
               style: TextStyle(
-                color: Colors.white,
+                color: AppColors.darkGrey,
                 fontSize: 15,
                 fontWeight: FontWeight.w700,
               ),
@@ -32,7 +33,7 @@ class PrfileHeader extends StatelessWidget {
                 Text(
                   'ID: 78952',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: AppColors.darkGrey,
                     fontSize: 8,
                     fontWeight: FontWeight.w700,
                   ),
@@ -40,7 +41,7 @@ class PrfileHeader extends StatelessWidget {
                 SizedBox(width: 4),
                 Icon(
                   Icons.copy,
-                  color: Colors.white,
+                  color: AppColors.darkGrey,
                   size: 10,
                 ),
               ],

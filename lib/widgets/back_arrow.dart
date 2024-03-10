@@ -15,17 +15,17 @@ class BackArrow extends StatelessWidget {
         child: Container(
           width: 25,
           decoration: BoxDecoration(
-            color: AppColors.primaryColor.withOpacity(0.1),
+            color: AppColors.grey,
             borderRadius: BorderRadius.circular(100),
-            border: Border.all(
-              color: AppColors.primaryColor.withOpacity(0.15),
-            ),
+            // border: Border.all(
+            //   color: AppColors.primaryColor.withOpacity(0.15),
+            // ),
           ),
           child: const Center(
             child: Icon(
               Icons.arrow_back_ios_rounded,
               size: 20,
-              color: Colors.white,
+              color: Colors.black,
             ),
           ),
         ),

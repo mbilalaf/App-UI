@@ -1,4 +1,6 @@
+import 'package:design_2/pages/data_query_page/data_query_page.dart';
 import 'package:design_2/pages/member_income_page/member_income_page.dart';
+import 'package:design_2/pages/member_invites_page/member_invites_page.dart';
 import 'package:design_2/utils/app_colors.dart';
 import 'package:design_2/widgets/back_arrow.dart';
 import 'package:flutter/material.dart';
@@ -12,16 +14,16 @@ class AgencyPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.darkPurpule,
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: AppColors.darkPurpule,
+        backgroundColor: Colors.white,
         centerTitle: true,
         title: const Text(
-          'Agency',
+          'My Agency',
           style: TextStyle(
             fontSize: 18,
             fontWeight: FontWeight.bold,
-            color: Colors.white,
+            color: Colors.black,
           ),
         ),
         leading: const BackArrow(),
@@ -43,16 +45,37 @@ class AgencyPage extends StatelessWidget {
               title: 'Member income',
               onTap: () {
                 Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const MemberIncomePage(),
-                    ));
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const MemberIncomePage(),
+                  ),
+                );
               },
             ),
             const SizedBox(height: 12),
-            const SettingTile(title: 'Member Invites'),
+            SettingTile(
+              title: 'Member Invites',
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const MemberInvitesPage(),
+                  ),
+                );
+              },
+            ),
             const SizedBox(height: 12),
-            const SettingTile(title: 'Data Query'),
+            SettingTile(
+              title: 'Data Query',
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const DataQueryPage(),
+                  ),
+                );
+              },
+            ),
           ],
         ),
       ),

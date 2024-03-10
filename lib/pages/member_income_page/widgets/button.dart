@@ -10,10 +10,11 @@ class Button extends StatelessWidget {
       height: 60,
       width: MediaQuery.sizeOf(context).width,
       decoration: BoxDecoration(
-        gradient: LinearGradient(colors: [
-          AppColors.darkPurpule.withOpacity(0.95),
-          AppColors.primaryColor,
-        ]),
+        color: Colors.white,
+        // gradient: LinearGradient(colors: [
+        //   AppColors.darkPurpule.withOpacity(0.95),
+        //   AppColors.primaryColor,
+        // ]),
         borderRadius: BorderRadius.circular(5),
       ),
       child: const Center(
@@ -22,7 +23,7 @@ class Button extends StatelessWidget {
           style: TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.w600,
-            color: Colors.white,
+            color: AppColors.darkGrey,
           ),
         ),
       ),

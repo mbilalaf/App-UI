@@ -3,11 +3,10 @@ import 'package:design_2/pages/member_income_page/widgets/select_time.dart';
 import 'package:design_2/utils/app_colors.dart';
 import 'package:design_2/widgets/back_arrow.dart';
 import 'package:flutter/material.dart';
+import '../member_income_page/widgets/button.dart';
 
-import 'widgets/button.dart';
-
-class MemberIncomePage extends StatelessWidget {
-  const MemberIncomePage({super.key});
+class DataQueryPage extends StatelessWidget {
+  const DataQueryPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +16,7 @@ class MemberIncomePage extends StatelessWidget {
         backgroundColor: Colors.white,
         centerTitle: true,
         title: const Text(
-          'Member Income',
+          'Data Query',
           style: TextStyle(
             fontSize: 18,
             fontWeight: FontWeight.bold,
